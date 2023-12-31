@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More</title>
+  </head>
+  <style>
+    body {
+      background: #ddcef8;
+    }
+    .Entertainment {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .Morecard {
+      width: 250px;
+      overflow: hidden;
+      background-color: #c4aee7;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 900;
+      object-fit: cover;
+      box-shadow: 0 0 10px black;
+    }
+    .Morecard:hover {
+      transform: scale(1.02);
+    }
+    .insidebox {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="moreButton">
+      <h2 style="margin-left: 60px">Entertainment</h2>
+      <div class="Entertainment">
+        <div id="jokecard" class="Morecard">
+          <a class="insidebox" href="joke.html">
+            <img src="jokeThumbnail.png" height="200px" width="250" alt="" />
+            <hr />
+            Jokes
+          </a>
+        </div>
+        <div id="tictactoe" class="Morecard">
+          <a class="insidebox" href="tictaktoe.html">
+            <img
+              src="TicTakToeThumbnail.jpeg"
+              height="200px"
+              width="250"
+              alt=""
+            />
+            <hr />
+            TicTacToe Game</a
+          >
+        </div>
+        <div id="quizapp" class="Morecard">
+          <a class="insidebox" href="Quiz.html">
+            <img src="quizThumbnail.jpeg" height="200px" width="250" alt="" />
+            <hr />
+            Quiz</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

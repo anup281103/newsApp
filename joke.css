@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Oswald:wght@500&family=Raleway:wght@100&family=Rubik+Bubbles&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.jokeNavbar {
+  display: flex;
+  justify-content: center;
+  font-size: 4vmax;
+  font-family: "Oswald", sans-serif;
+  background-color: #bc58de;
+}
+
+.midSection {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(jokeBGImage.jpg);
+  padding: 3vmax 7vmax 0vmax 7vmax;
+  background-size: cover;
+}
+.jokeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dfafefa8;
+  padding: 3vmax;
+  border-radius: 3vmax;
+  border: solid #983798;
+}
+.joke {
+  border: solid #57316b 0.2vmax;
+  font-size: 2vmax;
+  padding: 3vmax;
+  border-radius: 4vmax;
+}
+
+.jokeBtn button {
+  font-size: 1.7vmax;
+  margin-top: 3vmax;
+  padding: 1vmax;
+  background-color: #bc58de;
+  color: #2e1c3c;
+  size: 5vmax;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 1vmax;
+}
+#link {
+  margin: 0.5vmax;
+  padding: 1vmax;
+  text-decoration: none;
+  color: #250b39;
+  background-color: #27b827;
+  border-radius: 2vmax;
+}
+#link:hover {
+  background-color: #1fa51f;
+  transform: translateX(0.05vmax);
+  transform: translateY(-0.05vmax);
+}
+.jokeBtn button:hover {
+  background-color: #ab4fca;
+  transform: translateX(0.05vmax);
+  transform: translateY(-0.05vmax);
+}
+@media screen and (max-width: 600px) {
+  .jokeBox {
+    margin-right: -9vmax;
+    margin-left: -9vmax;
+    margin-top: -7vmax;
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsWebsite</title>
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        onclick="fetchIndianNews()"
+        id="newsLogo"
+        src="pngegg.png"
+        alt="newsLogo"
+      />
+      <div class="headerShortcut">
+        <li onclick="fetchSportsNews()">Sports</li>
+        <li onclick="fetchTechnologyNews()">Technology</li>
+        <li onclick="fetchPoliticsNews()">Politics</li>
+        <div class="jokeAndMode">
+          <div>
+            <a id="JokeMode" href="More.html"
+              ><button class="JokeFetchButton">More</button>
+            </a>
+          </div>
+          <div>
+            <img
+              id="DarkModeButton"
+              onclick="changeTheme()"
+              src="DarkMode.png"
+              alt="DarkMode"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="searchSection">
+        <input type="text" placeholder="eg.Science" id="searchbar" />
+        <button onclick="fetchSearchNews()" class="searchButton">Search</button>
+      </div>
+    </div>
+    <!-- -------------------------------------- -->
+
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+    ></script>
+
+    <!-- ------------------------------------------- -->
+    <div class="cardContainer"></div>
+    <template class="cardTemplet">
+      <div class="card">
+        <div class="cardImage">
+          <img id="cardImage" src="pngegg.png" alt="News Image" />
+        </div>
+        <div class="cardContent">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+            illum!
+          </div>
+          <hr />
+          <div class="cardContentAdditional">
+            <div class="date"></div>
+            <div class="readMoreButton">
+              <button onclick="goToLink()"><b>Read More</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </body>
+  <script src="news.js"></script>
+</html>

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+body {
+  background-color: rgba(169, 167, 184, 0.61);
+}
+.heading {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 1px;
+  background-color: rgb(79, 79, 118);
+  color: rgb(201, 212, 223);
+  font-family: cursive;
+  border-radius: 1px;
+  text-align: center;
+}
+.gamecontainer {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.gamecontainer .container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+}
+.container div {
+  border: 3px solid black;
+}
+
+.Box {
+  font-size: 10vw;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.Box:hover {
+  background-color: rgb(222, 219, 231);
+}
+.gif img {
+  width: 0px;
+}
+.info {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(55, 26, 63);
+  margin: 20px;
+  padding: 20px 30px;
+}
+
+#Reset {
+  height: 100px;
+  background-color: rgb(190, 214, 216);
+  color: rgb(28, 63, 56);
+  border-radius: 2px;
+  padding: 15px 20px;
+}
+#welcome {
+  font-family: cursive;
+  margin-left: 10%;
+  padding: 10px;
+  background-color: rgb(201, 212, 223);
+  border-radius: 5px;
+}
+.line {
+  position: absolute;
+  background-color: #723b83;
+  transition: width 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .gamecontainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container {
+    margin-left: 40%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 20vw);
+    transform: scale(1.5);
+  }
+}

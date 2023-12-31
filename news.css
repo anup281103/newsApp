@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nunito:wght@100&family=Oswald:wght@500&family=Raleway:wght@100&family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.card {
+  margin: 1vmax;
+  height: 20vmax;
+  width: 20vmax;
+  display: flex;
+  box-shadow: 0px 0px 5px rgb(60, 60, 60), 0px 0px 15px rgb(60, 60, 60);
+  flex-direction: column;
+  justify-content: flex-end;
+  border: solid black 1px;
+  border-radius: 1vmax;
+  overflow: hidden;
+}
+.cardImage {
+  border: solid black 1px;
+  height: 12vmax;
+  width: 20vmax;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vmax;
+}
+.cardImage img {
+  height: 12vmax;
+  width: 20vmax;
+}
+.navbar {
+  padding: 1vmax 2vmax 1vmax 1vmax;
+  font-family: "Cinzel", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(48 47 88);
+  width: 100%;
+}
+.navbar li {
+  margin-left: 1vmax;
+  font-size: 1.5vmax;
+  text-decoration: underline;
+  list-style-type: none;
+}
+.headerShortcut {
+  gap: 5vmax;
+  margin-right: -12vmax;
+  color: #d0cc88;
+  text-shadow: 0px 0px 2px #ffed00;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar input {
+  padding: 2%;
+  font-size: 1.5vmax;
+  color: #000000;
+  background-color: rgb(242, 242, 242);
+  height: 4vh;
+  width: 15vw;
+  border-radius: 0.5vmax;
+}
+.navbar img {
+  margin-left: 3%;
+  height: 6vmax;
+}
+.searchButton {
+  padding: 2%;
+  font-size: 1.5vmax;
+  border-radius: 1vmax;
+  font-family: initial;
+  background-color: #ebf4bc;
+}
+.searchSection {
+  display: flex;
+  align-items: center;
+}
+.JokeFetchButton {
+  padding: 1vmax;
+  border-radius: 1vmax;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  size: 3vmax;
+  font-size: 1.5vmax;
+  background-color: #fffc3ee4;
+}
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cardContentAdditional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.date {
+  font-size: 1vmax;
+}
+.readMoreButton button {
+  margin: 0.5vmax;
+  font-size: 1.5vmax;
+  border-radius: 0.5vmax;
+  padding: 0.15vmax;
+  font-family: initial;
+  background-color: #d42c2cf5;
+}
+.jokeAndMode {
+  display: flex;
+  gap: 1vmax;
+  align-items: center;
+}
+.jokeAndMode img {
+  height: 3vmax;
+}
+.JokeFetchButton:hover {
+  background-color: #e3e03ee4;
+  cursor: pointer;
+  transform: scale(1.025);
+  transition: transform 200ms ease-in-out;
+}
+.card:hover {
+  background-color: rgb(244, 244, 244);
+  transform: scale(1.025);
+  transition: transform 200ms ease-in-out;
+}
+.headerShortcut li:hover {
+  cursor: pointer;
+  color: #b7b377;
+  text-shadow: 0px 0px 2px #eada02;
+  transform: scale(1.025);
+  transition: transform 200ms ease-in-out;
+}
+.searchButton:hover {
+  cursor: pointer;
+  background-color: #d3dba9;
+}
+.readMoreButton button:hover {
+  cursor: pointer;
+  background-color: #d02c2cf5;
+  transform: scale(1.025);
+  transition: transform 200ms ease-in-out;
+}
+#DarkModeButton:hover {
+  transform: scale(1.05);
+  transition: transform 200ms ease-in-out;
+}
+.navbar img:hover {
+  transform: scale(1.05);
+  transition: transform 200ms ease-in-out;
+}
+@media screen and (max-width: 900px) {
+  .headerShortcut {
+    margin: 0px;
+    gap: 10px;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  #newsLogo {
+    height: 14vmax;
+  }
+}
